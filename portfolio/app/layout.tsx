@@ -28,7 +28,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ParticlesComponent></ParticlesComponent>
+        <div className="fixed inset-0 -z-10 pointer-events-none">
+          <ParticlesComponent />
+        </div>
         {children}
       </body>
     </html>

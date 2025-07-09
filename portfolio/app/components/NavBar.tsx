@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black/10 bg-opacity-60 z-50 py-4 flex items-center justify-between px-32">
+    <nav className="fixed top-0 left-0 w-full z-50 py-4 flex items-center justify-between px-32 bg-[rgba(10,17,40,0.6)] backdrop-blur-md">
       <p className="text-[var(--text-color)] uppercase font-semibold">
         Pablo Losada
       </p>
@@ -13,15 +13,19 @@ const NavBar = () => {
           <span className="text-[#1282A2] font-semibold">01.</span>
           Inicio
         </Link>
-        <Link href="/about" className="flex gap-2 hover:scale-110 transition">
+        <Link href="/skills" className="flex gap-2 hover:scale-110 transition">
           <span className="text-[#1282A2] font-semibold">02.</span>
+          Skills
+        </Link>
+        <Link href="/about" className="flex gap-2 hover:scale-110 transition">
+          <span className="text-[#1282A2] font-semibold">03.</span>
           Sobre mí
         </Link>
         <Link
           href="/projects"
           className="flex gap-2 hover:scale-110 transition"
         >
-          <span className="text-[#1282A2] font-semibold">03.</span>
+          <span className="text-[#1282A2] font-semibold">04.</span>
           Proyectos
         </Link>
       </div>
